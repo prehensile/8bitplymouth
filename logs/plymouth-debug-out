@@ -1,0 +1,330 @@
+03:39:12.391 main.c:1902:check_logging                                     : checking if console messages should be redirected and logged
+03:39:12.391 main.c:1911:check_logging                                     : logging will be enabled!
+03:39:12.391 main.c:1981:initialize_environment                            : source built on Apr  1 2020
+03:39:12.391 main.c:1992:initialize_environment                            : Making sure /run/plymouth exists
+03:39:12.391 ply-utils.c:596:ply_create_directory                          : directory '/run/plymouth' already exists
+03:39:12.391 main.c:1996:initialize_environment                            : initialized minimal work environment
+03:39:12.391 main.c:709:get_cache_file_for_mode                            : returning cache file '/var/lib/plymouth//boot-duration'
+03:39:12.392 main.c:289:load_settings                                      : Trying to load /etc/plymouth//plymouthd.conf
+03:39:12.392 ply-key-file.c:84:ply_key_file_open_file                      : Failed to open key file /etc/plymouth//plymouthd.conf: No such file or directory
+03:39:12.392 main.c:432:find_system_default_splash                         : failed to load /etc/plymouth//plymouthd.conf
+03:39:12.392 main.c:289:load_settings                                      : Trying to load /run/plymouth/plymouthd.defaults
+03:39:12.392 ply-key-file.c:84:ply_key_file_open_file                      : Failed to open key file /run/plymouth/plymouthd.defaults: No such file or directory
+03:39:12.392 main.c:446:find_distribution_default_splash                   : failed to load /run/plymouth/plymouthd.defaults, trying /usr/share/plymouth//
+03:39:12.392 main.c:289:load_settings                                      : Trying to load /usr/share/plymouth//plymouthd.defaults
+03:39:12.392 ply-key-file.c:84:ply_key_file_open_file                      : Failed to open key file /usr/share/plymouth//plymouthd.defaults: No such file or directory
+03:39:12.392 main.c:448:find_distribution_default_splash                   : failed to load /usr/share/plymouth//plymouthd.defaults
+03:39:12.392 main.c:881:plymouth_should_show_default_splash                : checking if plymouth should show default splash
+03:39:12.392 main.c:909:plymouth_should_show_default_splash                : using default splash because kernel command line has option "splash"
+03:39:12.392 ply-key-file.c:84:ply_key_file_open_file                      : Failed to open key file /etc/vconsole.conf: No such file or directory
+03:39:12.392 ply-device-manager.c:866:create_devices_from_terminals        : checking for consoles
+03:39:12.392 ply-device-manager.c:644:add_consoles_from_file               : opening /sys/class/tty/console/active
+03:39:12.392 ply-device-manager.c:652:add_consoles_from_file               : reading file
+03:39:12.392 ply-device-manager.c:690:add_consoles_from_file               : console /dev/tty1 found!
+03:39:12.392 ply-device-manager.c:966:ply_device_manager_watch_devices     : udev support disabled, creating fallback devices
+03:39:12.392 ply-device-manager.c:778:create_devices_for_terminal_and_rende: creating devices for  (renderer type: 0) (terminal: /dev/tty1)
+03:39:12.392 ply-renderer.c:236:ply_renderer_open_plugin                   : trying to open renderer plugin /usr/lib/x86_64-linux-gnu/plymouth/renderers/x11.so
+03:39:12.392 ply-utils.c:536:ply_open_module                               : Could not load module "/usr/lib/x86_64-linux-gnu/plymouth/renderers/x11.so": /usr/lib/x86_64-linux-gnu/plymouth/renderers/x11.so: cannot open shared object file: No such file or directory
+03:39:12.392 ply-renderer.c:236:ply_renderer_open_plugin                   : trying to open renderer plugin /usr/lib/x86_64-linux-gnu/plymouth/renderers/drm.so
+03:39:12.393 ./plugin.c:894:create_backend                                 : creating renderer backend for device /dev/dri/card0
+03:39:12.393 ./plugin.c:186:should_use_preferred_mode                      : should_use_preferred_mode: 1
+03:39:12.393 ./plugin.c:975:load_driver                                    : Opening '/dev/dri/card0'
+03:39:12.393 ply-terminal.c:637:ply_terminal_open                          : trying to open terminal '/dev/tty1'
+03:39:12.393 ply-terminal.c:430:ply_terminal_refresh_geometry              : looking up terminal text geometry
+03:39:12.393 ply-terminal.c:442:ply_terminal_refresh_geometry              : terminal is now 375x125 text cells
+03:39:12.393 ply-terminal.c:480:get_active_vt                              : Remembering that initial vt is 2
+03:39:12.393 ./plugin.c:1383:create_heads_for_active_connectors            : (Re)enumerating all outputs
+03:39:12.394 ./plugin.c:1076:output_get_controller_info                    : Found already lit monitor on connector 95 using controller 51
+03:39:12.394 ./plugin.c:1085:output_get_controller_info                    : connector 95 encoder 94 possible controllers 0x00000007/0x00000007
+03:39:12.394 ./plugin.c:553:ply_renderer_connector_get_rotation_and_tiled  : link-status 0
+03:39:12.394 ./plugin.c:1138:get_preferred_mode                            : Found preferred mode 3000x2000 at index 0
+03:39:12.398 ./plugin.c:1452:create_heads_for_active_connectors            : Using controller 51 for connector 95
+03:39:12.398 ./plugin.c:1452:create_heads_for_active_connectors            : Using controller 0 for connector 103
+03:39:12.398 ./plugin.c:1452:create_heads_for_active_connectors            : Using controller 0 for connector 112
+03:39:12.398 ./plugin.c:594:ply_renderer_head_add_connector                : Adding connector with id 95 to 3000x2000 head
+03:39:12.398 ./plugin.c:642:ply_renderer_head_new                          : Creating 3000x2000 renderer head
+03:39:12.431 ./plugin.c:1494:create_heads_for_active_connectors            : outputs changed
+
+03:39:12.431 ./plugin.c:264:ply_renderer_buffer_new                        : returning 1x1 buffer with stride 64
+03:39:12.431 ply-renderer.c:256:ply_renderer_open_plugin                   : opened renderer plugin /usr/lib/x86_64-linux-gnu/plymouth/renderers/drm.so
+03:39:12.431 main.c:1001:on_keyboard_added                                 : listening for keystrokes
+03:39:12.431 main.c:1005:on_keyboard_added                                 : listening for escape
+03:39:12.431 main.c:1009:on_keyboard_added                                 : listening for backspace
+03:39:12.431 main.c:1013:on_keyboard_added                                 : listening for enter
+03:39:12.431 ply-device-manager.c:715:create_pixel_displays_for_renderer   : Adding displays for 1 heads
+03:39:12.431 ply-terminal.c:430:ply_terminal_refresh_geometry              : looking up terminal text geometry
+03:39:12.431 ply-terminal.c:442:ply_terminal_refresh_geometry              : terminal is now 375x125 text cells
+03:39:12.431 ply-device-manager.c:751:create_text_displays_for_terminal    : adding text display for terminal /dev/tty1
+03:39:12.431 main.c:2293:main                                              : entering event loop
+03:39:12.431 ply-boot-server.c:350:print_connection_process_identity       : connection is from pid 217862 (plymouth --show-splash) with parent pid 217859 (/bin/bash ./preview-alt.sh)
+03:39:12.431 ply-boot-server.c:449:ply_boot_connection_on_request          : got show splash request
+03:39:12.431 main.c:849:plymouth_should_ignore_show_splash_calls           : checking if plymouth should be running
+03:39:12.431 main.c:950:on_show_splash                                     : at least one display already available, so loading splash
+03:39:12.431 main.c:881:plymouth_should_show_default_splash                : checking if plymouth should show default splash
+03:39:12.431 main.c:909:plymouth_should_show_default_splash                : using default splash because kernel command line has option "splash"
+03:39:12.432 main.c:462:show_default_splash                                : Showing splash screen
+03:39:12.432 main.c:481:show_default_splash                                : Trying old scheme for default splash
+03:39:12.432 main.c:1709:load_theme                                        : Loading boot splash theme '/usr/share/plymouth/themes/default.plymouth'
+03:39:12.432 ply-key-file.c:175:ply_key_file_load_group                    : trying to load group Plymouth Theme
+03:39:12.432 ply-key-file.c:175:ply_key_file_load_group                    : trying to load group script
+03:39:12.432 ply-key-file.c:262:ply_key_file_load_groups                   : key file has no more groups
+03:39:12.434 main.c:1725:load_theme                                        : attaching plugin to event loop
+03:39:12.434 main.c:1728:load_theme                                        : attaching progress to plugin
+03:39:12.434 ply-boot-splash.c:138:ply_boot_splash_add_pixel_display       : adding 1500x1000 pixel display
+03:39:12.434 ply-device-manager.c:1029:ply_device_manager_activate_renderer: activating renderers
+03:39:12.434 ply-boot-splash.c:486:ply_boot_splash_show                    : showing splash screen
+03:39:12.434 ./plugin.c:424:show_splash_screen                             : starting boot animation
+03:39:12.434 ./plugin.c:302:start_animation                                : parsing script file
+03:39:12.443 ./plugin.c:280:start_script_animation                         : executing script file
+03:39:12.467 ./plugin.c:749:ply_renderer_head_map                          : Creating buffer for 3000x2000 renderer head
+03:39:12.467 ./plugin.c:264:ply_renderer_buffer_new                        : returning 3000x2000 buffer with stride 12032
+03:39:12.467 ./plugin.c:757:ply_renderer_head_map                          : Mapping buffer for 3000x2000 renderer head
+03:39:12.468 ply-device-manager.c:1062:ply_device_manager_activate_keyboard: activating keyboards
+03:39:12.472 ply-event-loop.c:1142:ply_event_loop_free_destinations_for_sou: freeing destination (1, 0x5573ca110600, 0x5573ca10fbf0) of fd 10
+03:39:12.568 ./plugin.c:962:on_active_vt_changed                           : activating on vt change
+03:39:12.571 ./plugin.c:937:activate                                       : taking master and scanning out
+03:39:12.582 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:12.582 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:12.582 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:13.683 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:13.683 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:13.683 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:13.683 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:13.683 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:13.683 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:13.684 ply-boot-server.c:350:print_connection_process_identity       : connection is from pid 217869 (plymouth --update=event0) with parent pid 217859 (/bin/bash ./preview-alt.sh)
+03:39:13.684 ply-boot-server.c:401:ply_boot_connection_on_request          : got update request
+03:39:13.684 main.c:183:on_update                                          : updating status to 'event0'
+03:39:13.684 ply-event-loop.c:1142:ply_event_loop_free_destinations_for_sou: freeing destination (1, 0x5573ca110600, 0x5573ca10fbf0) of fd 10
+03:39:13.723 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:13.723 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:13.724 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:13.763 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:13.764 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:13.764 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:13.803 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:13.803 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:13.803 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:13.824 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:13.824 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:13.824 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:13.864 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:13.864 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:13.864 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:13.904 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:13.904 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:13.904 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:13.924 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:13.924 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:13.924 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:13.964 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:13.964 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:13.964 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.004 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.004 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.004 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.024 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.024 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.024 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.064 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.064 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.064 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.104 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.104 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.104 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.124 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.124 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.124 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.164 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.164 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.164 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.204 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.204 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.204 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.224 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.224 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.224 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.264 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.264 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.264 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.304 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.304 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.304 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.323 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.324 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.324 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.364 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.364 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.364 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.405 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.405 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.405 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.424 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.424 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.424 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.464 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.464 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.464 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.504 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.504 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.504 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.524 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.524 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.524 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.564 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.564 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.564 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.604 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.604 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.604 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.624 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.624 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.624 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.664 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.664 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.664 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.686 ply-boot-server.c:350:print_connection_process_identity       : connection is from pid 217877 (plymouth --update=event1) with parent pid 217859 (/bin/bash ./preview-alt.sh)
+03:39:14.686 ply-boot-server.c:401:ply_boot_connection_on_request          : got update request
+03:39:14.686 main.c:183:on_update                                          : updating status to 'event1'
+03:39:14.686 ply-event-loop.c:1142:ply_event_loop_free_destinations_for_sou: freeing destination (1, 0x5573ca110600, 0x5573ca10fbf0) of fd 10
+03:39:14.704 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.704 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.704 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.724 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.724 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.724 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.764 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.764 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.764 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.804 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.804 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.804 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.824 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.824 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.824 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.864 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.864 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.864 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.905 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.905 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.905 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.925 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.925 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.925 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:14.964 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:14.965 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:14.965 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.005 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.005 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.005 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.025 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.025 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.025 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.064 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.064 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.064 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.104 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.104 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.104 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.124 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.124 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.124 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.164 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.164 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.164 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.204 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.204 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.204 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.224 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.224 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.224 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.264 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.264 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.264 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.304 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.304 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.304 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.324 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.324 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.324 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.364 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.364 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.364 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.404 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.404 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.404 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.424 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.424 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.424 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.465 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.465 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.465 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.505 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.505 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.505 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.525 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.525 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.525 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.564 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.564 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.564 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.604 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.604 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.604 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.624 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.624 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.624 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.664 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.665 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.665 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.688 ply-boot-server.c:350:print_connection_process_identity       : connection is from pid 217881 (plymouth --update=event2) with parent pid 217859 (/bin/bash ./preview-alt.sh)
+03:39:15.688 ply-boot-server.c:401:ply_boot_connection_on_request          : got update request
+03:39:15.688 main.c:183:on_update                                          : updating status to 'event2'
+03:39:15.688 ply-event-loop.c:1142:ply_event_loop_free_destinations_for_sou: freeing destination (1, 0x5573ca110600, 0x5573ca10fbf0) of fd 10
+03:39:15.699 ply-boot-server.c:350:print_connection_process_identity       : connection is from pid 217882 (plymouth quit) with parent pid 217859 (/bin/bash ./preview-alt.sh)
+03:39:15.699 ply-boot-server.c:486:ply_boot_connection_on_request          : got quit request
+03:39:15.699 main.c:1355:on_quit                                           : quitting (retain splash: false)
+03:39:15.699 main.c:1372:on_quit                                           : system not initialized so skipping saving boot-duration file
+03:39:15.699 main.c:1666:tell_systemd_to_stop_printing_details             : telling systemd to stop printing details
+03:39:15.699 main.c:1381:on_quit                                           : closing log
+03:39:15.699 ply-device-manager.c:1084:ply_device_manager_deactivate_keyboa: deactivating keyboards
+03:39:15.699 ply-event-loop.c:765:ply_event_loop_stop_watching_fd          : stopping watching fd 9
+03:39:15.699 ply-event-loop.c:781:ply_event_loop_stop_watching_fd          : removing destination for fd 9
+03:39:15.699 main.c:1387:on_quit                                           : unloading splash
+03:39:15.699 ply-boot-splash.c:687:ply_boot_splash_become_idle             : telling splash to become idle
+03:39:15.699 ply-boot-splash.c:663:on_idle                                 : splash now idle
+03:39:15.705 ./plugin.c:711:ply_renderer_head_set_scan_out_buffer          : Setting scan out buffer of 3000x2000 head to our buffer
+03:39:15.705 ./plugin.c:730:ply_renderer_head_set_scan_out_buffer          : Couldn't set scan out buffer for head with controller id 51
+03:39:15.705 ./plugin.c:1704:flush_head                                    : Needed to reset scan out buffer on 3000x2000 renderer head
+03:39:15.709 main.c:1258:on_boot_splash_idle                               : boot splash idle
+03:39:15.709 main.c:1265:on_boot_splash_idle                               : hiding splash
+03:39:15.709 ./plugin.c:953:deactivate                                     : dropping master
+03:39:15.719 main.c:1269:on_boot_splash_idle                               : quitting splash
+03:39:15.723 main.c:1134:quit_splash                                       : quitting splash
+03:39:15.727 main.c:1136:quit_splash                                       : freeing splash
+03:39:15.731 ply-boot-splash.c:390:ply_boot_splash_free                    : freeing splash
+03:39:15.735 ply-event-loop.c:971:ply_event_loop_stop_watching_for_timeout : no matching timeout found for removal
+03:39:15.739 ply-boot-splash.c:335:remove_pixel_displays                   : removing pixel displays
+03:39:15.742 ply-boot-splash.c:349:remove_pixel_displays                   : Removing 1500x1000 pixel display
+03:39:15.746 ply-device-manager.c:1084:ply_device_manager_deactivate_keyboa: deactivating keyboards
+03:39:15.750 main.c:1145:quit_splash                                       : Not retaining splash, so deallocating VT
+03:39:15.754 ply-terminal.c:996:ply_terminal_deactivate_vt                 : Attempting to set active vt back to 2 from 1
+03:39:15.757 ply-terminal.c:1013:ply_terminal_deactivate_vt                : couldn't deallocate vt 1: Device or resource busy
+03:39:15.757 ply-terminal.c:706:ply_terminal_close                         : restoring color palette
+03:39:15.757 ply-terminal.c:710:ply_terminal_close                         : stop watching tty fd
+03:39:15.757 ply-event-loop.c:765:ply_event_loop_stop_watching_fd          : stopping watching fd 9
+03:39:15.757 ply-event-loop.c:781:ply_event_loop_stop_watching_fd          : removing destination for fd 9
+03:39:15.757 ply-event-loop.c:790:ply_event_loop_stop_watching_fd          : no more destinations remaing for fd 9, removing source
+03:39:15.757 ply-terminal.c:716:ply_terminal_close                         : stop watching SIGWINCH signal
+03:39:15.757 ply-terminal.c:720:ply_terminal_close                         : setting buffered input
+03:39:15.757 main.c:1271:on_boot_splash_idle                               : quitting program
+03:39:15.758 main.c:1199:quit_program                                      : cleaning up devices
+03:39:15.758 ply-device-manager.c:603:ply_device_manager_free              : freeing device manager
+03:39:15.758 ply-renderer.c:92:ply_renderer_free                           : Unloading renderer backend plugin
+03:39:15.758 ply-event-loop.c:971:ply_event_loop_stop_watching_for_timeout : no matching timeout found for removal
+03:39:15.758 main.c:1202:quit_program                                      : exiting event loop
+03:39:15.758 ply-boot-server.c:314:ply_boot_connection_on_quit_complete    : quit complete
+03:39:15.758 main.c:2295:main                                              : exited event loop
+03:39:15.758 ply-boot-splash.c:390:ply_boot_splash_free                    : freeing splash
+03:39:15.758 main.c:2305:main                                              : freeing terminal session
+03:39:15.758 main.c:2311:main                                              : exiting with code 0
