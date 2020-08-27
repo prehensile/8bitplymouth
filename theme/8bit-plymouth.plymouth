@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=8bit-plymouth
+Description=8 Bit Plymouth theme by @prehensile
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/8bit-plymouth
+ScriptFile=/usr/share/plymouth/themes/8bit-plymouth/8bit-plymouth.script
